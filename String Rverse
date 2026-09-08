@@ -1,0 +1,10 @@
+CREATE OR REPLACE PROCEDURE reverse_string(strINVARCHAR2)IS 
+reversed_str VARCHAR2(100):=''; 
+lenNUMBER:=LENGTH(str);
+BEGIN FORiINREVERSE1..lenLOOP reversed_str:=reversed_str||SUBSTR(str,i,1);
+ENDLOOP; DBMS_OUTPUT.PUT_LINE('ReversedString: ' ||reversed_str);
+END; 
+
+Excution
+BEGIN reverse_string('oracle');
+END;
