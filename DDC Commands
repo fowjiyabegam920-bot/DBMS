@@ -1,0 +1,19 @@
+-- 1. CREATE a table
+CREATE TABLE Student (
+    ID INT,
+    Name VARCHAR(30),
+    Mark INT
+);
+
+-- 2. ALTER the table
+ALTER TABLE Student
+ADD City VARCHAR(20);
+
+-- 3. RENAME the table
+RENAME Student TO Student_Details;
+
+-- 4. TRUNCATE the table
+TRUNCATE TABLE Student_Details;
+
+-- 5. DROP the table
+DROP TABLE Student_Details;
