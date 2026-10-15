@@ -1,0 +1,22 @@
+-- 1. CREATE a table
+CREATE TABLE Student (
+    ID INT,
+    Name VARCHAR(30),
+    Mark INT
+);
+
+-- 2. INSERT data
+INSERT INTO Student VALUES (1, 'Fowzi', 85);
+INSERT INTO Student VALUES (2, 'Anitha', 90);
+
+-- 3. UPDATE data
+UPDATE Student
+SET Mark = 95
+WHERE ID = 1;
+
+-- 4. DELETE data
+DELETE FROM Student
+WHERE ID = 2;
+
+-- 5. SELECT data
+SELECT * FROM Student;
