@@ -1,0 +1,10 @@
+DECLARE
+aNUMBER:=4;
+fNUMBER:=1;
+BEGIN
+while(a>0)loop
+f:=f*a;
+a:=a-1;
+endloop;
+dbms_output.put_line('Factorialis'||f);
+end;
