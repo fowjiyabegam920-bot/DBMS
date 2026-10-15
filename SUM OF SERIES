@@ -1,0 +1,13 @@
+CREATEORREPLACEPROCEDUREsum_of_series(p_nINNUMBER)IS
+totalNUMBER:=0;
+i NUMBER;
+BEGIN
+IFp_n<1THEN
+dbms_output.put_line('nmustbe>=1');
+RETURN;
+ENDIF;
+FORiIN1..p_nLOOP
+total:=total+i;
+ENDLOOP;
+dbms_output.put_line('Sumofseries1to' ||p_n|| ' is: ' || total);
+END;
