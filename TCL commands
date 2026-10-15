@@ -1,0 +1,20 @@
+-- Create a table
+CREATE TABLE Student (
+    ID INT,
+    Name VARCHAR(30)
+);
+
+-- Insert data
+INSERT INTO Student VALUES (1, 'Anu');
+
+-- SAVE the transaction
+SAVEPOINT S1;
+
+-- Insert another record
+INSERT INTO Student VALUES (2, 'Ravi');
+
+-- ROLLBACK to savepoint
+ROLLBACK TO S1;
+
+-- COMMIT the transaction
+COMMIT;
