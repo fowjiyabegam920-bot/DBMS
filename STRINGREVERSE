@@ -1,0 +1,9 @@
+CREATEORREPLACEPROCEDUREreverse_string(strINVARCHAR2)IS
+reversed_strVARCHAR2(100):='';
+lenNUMBER:=LENGTH(str);
+BEGIN
+FORiINREVERSE1..lenLOOP
+reversed_str:=reversed_str||SUBSTR(str,i,1);
+ENDLOOP;
+DBMS_OUTPUT.PUT_LINE('ReversedString: ' ||reversed_str);
+END;
